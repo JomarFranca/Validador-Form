@@ -3,6 +3,7 @@
     padding: 0px;
     outline: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,4 +30,19 @@ body {
 .rightside {
     width: 400px;
     background-color: #ddd;
+    padding: 50px;
+}
+
+.rightside label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.rightside input {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
 }
