@@ -46,3 +46,11 @@ body {
     font-size: 14px;
     outline: 0;
 }
+
+.error {
+    font-size: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+}
