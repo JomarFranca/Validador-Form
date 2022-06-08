@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="images/x-icon" href="img/icon_form.png">
-    <title>Validador de Formulário</title>
+    <title>Formulário</title>
 </head>
 <body>
     <div class="screen">
@@ -14,27 +14,33 @@
             <img src="./img/Financial-Data.png" alt="">
         </div>
         <div class="rightside">
-            <h1>Crie uma conta</h1>
+            <h1>Crie uma Conta!</h1>
             <form method="POST" action="cadastro.php" class="b7validator">
                 <label>
-                    Seu nome: <br/>
+                    Nome: <br/>
                     <input type="text" name="name" data-rules="required|min=3" placeholder="Nome:" />
                 </label>
                 <label>
-                    Seu e-mail: <br/>
+                    E-mail: <br/>
                     <input type="text" name="email" data-rules="required|email" placeholder="E-mail:" />
                 </label>
                 <label>
-                    Sua senha: <br/>
+                    Senha: <br/>
                     <input type="password" name="password" data-rules="required|min=6" placeholder="Senha:" />
                 </label>
-                <label>
-                    <input type="submit" value="Cadastrar">
+                <label class="botao">
+                    <input type="submit" value="Cadastrar!">
                 </label>
             </form>
-            <div>
-                Já tem uma conta?
-                <a href="">Faça o login!</a>
+            <div class="checkout">
+                <div>
+                    <p>Já tem uma conta? <a href="#Login" target="_blank"> Faça o login!</a></p>
+                    
+                </div>
+                <div>
+                    <p>Esqueceu a senha? <a href="#Email_Cadastrado" target="_blank"> Clique Aqui!</a></p>                    
+                    
+                </div>
             </div>
         </div>
     </div>

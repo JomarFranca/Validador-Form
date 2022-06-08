@@ -6,51 +6,87 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Roboto&display=swap');
+
 body {
-    margin: 0px;
+    font-family: "Roboto", Sans-serif;
+    color: #23383f
 }
 
 .screen {
     display: flex;
-    height: 100vh
+    height: 100vh;
 }
 
 .leftside {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; 
     align-items: center;
 }
 
 .leftside img {
-    max-width: 500px;
-    height: auto;
+    width: 55rem;
+    margin-right: 0px;
+    opacity: 0.6;
 }
 
 .rightside {
-    width: 400px;
-    background-color: #ddd;
-    padding: 50px;
+    width: 30rem;
+    background-image: url(./img/business-analytics.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2.5rem 4rem;
 }
 
+.rightside h1 {
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 2px 2px 3px #dfdde5;
+}
 .rightside label {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 
 .rightside input {
     width: 100%;
-    border: 1px solid #999;
+    border: 1px solid #23383f;
     border-radius: 3px;
-    padding: 8px;
-    font-size: 14px;
+    padding: 0.5rem;
+    font-size: 0.9rem;
     outline: 0;
+    box-shadow: 2px 2px 3px #dfdde5;
+}
+
+.botao {
+    background-color: #abd1c9;
+    color: #23383f;
+}
+
+.checkout {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        text-shadow: 2px 2px 2px #abd1c9;
+    }
+
+.checkout a {
+    color: #23383f;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    cursor: pointer;
 }
 
 .error {
-    font-size: 10px;
-    background-color: #ff0000;
-    color: #fff;
-    padding: 4px;
+    font-size: 0.8rem;
+    background-color: #32586e;
+    color: #dbb04a;
+    font-family: "PT Sans", "Helvetica Neue", Sans-serif;
+    font-style: italic;
+    padding: 0.3rem;
+    margin: 0.1rem;
     border-radius: 5px;
 }

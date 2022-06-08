@@ -53,7 +53,7 @@ let B7validator = {
 		return true;
 	},
 	showError:(input, error) => {
-		input.style.borderColor = '#FF0000';
+		input.style.borderColor = '#32586e';
 
 		let errorElement = document.createElement('div');
 		errorElement.classList.add('error');
