@@ -31,7 +31,7 @@ let B7validator = {
 				switch (rDetails[0]) {
 				case 'required':
 					if (input.value == '') {
-						return 'Campo não pode ser vazio!';
+						return 'Campo obrigatório, não pode está vazio!';
 					}
 					break;
 				case 'min':

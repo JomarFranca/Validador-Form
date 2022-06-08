@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Roboto&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
@@ -5,8 +7,6 @@
     list-style: none;
     box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&family=Roboto&display=swap');
 
 body {
     font-family: "Roboto", Sans-serif;
@@ -21,14 +21,13 @@ body {
 .leftside {
     flex: 1;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     align-items: center;
 }
 
 .leftside img {
-    width: 55rem;
+    width: 60rem;
     margin-right: 0px;
-    opacity: 0.6;
 }
 
 .rightside {
@@ -89,4 +88,40 @@ body {
     padding: 0.3rem;
     margin: 0.1rem;
     border-radius: 5px;
+}
+
+/* RODAPÉ */
+
+footer {
+    width: auto;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-texto {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+.footer-texto a {
+    color: #7ac9e9;
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.footer-texto a:hover {
+    color: #0a4d99;
+    text-decoration: none;
 }
