@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="images/x-icon" href="img/icon_form.png">
-    <title>Formulário</title>
-</head>
-<body>
-    <div class="screen">
-        <div class="leftside">
-            <img src="./img/Financial-Data.png" alt="">
-        </div>
-        <div class="rightside">
-            <h1>Crie uma Conta!</h1>
-            <form method="POST" action="cadastro.php" class="b7validator">
-                <label>
-                    Nome: <br/>
-                    <input type="text" name="name" data-rules="required|min=3" placeholder="Nome:" />
-                </label>
-                <label>
-                    E-mail: <br/>
-                    <input type="text" name="email" data-rules="required|email" placeholder="E-mail:" />
-                </label>
-                <label>
-                    Senha: <br/>
-                    <input type="password" name="password" data-rules="required|min=6" placeholder="Senha:" />
-                </label>
-                <label class="botao">
-                    <input type="submit" value="Cadastrar!">
-                </label>
-            </form>
-            <div class="checkout">
-                <div>
-                    <p>Já tem uma conta? <a href="#Login" target="_blank"> Faça o login!</a></p>                    
-                </div>
-                <div>
-                    <p>Esqueceu a senha? <a href="#Email_Cadastrado" target="_blank"> Clique Aqui!</a></p>                
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" type="images/x-icon" href="img/icon_form.png" />
+        <title>Formulário</title>
+    </head>
+    <body>
+        <div class="screen">
+            <div class="leftside">
+                <img src="./img/Financial-Data.png" alt="" />
+            </div>
+            <div class="rightside">
+                <h1>Crie uma Conta!</h1>
+                <form method="POST" action="cadastro.php" class="b7validator">
+                    <label>
+                        Nome: <br />
+                        <input
+                            type="text"
+                            name="name"
+                            data-rules="required|min=3"
+                            placeholder="Nome:"
+                        />
+                    </label>
+                    <label>
+                        E-mail: <br />
+                        <input
+                            type="text"
+                            name="email"
+                            data-rules="required|email"
+                            placeholder="E-mail:"
+                        />
+                    </label>
+                    <label>
+                        Senha: <br />
+                        <input
+                            type="password"
+                            name="password"
+                            data-rules="required|min=6"
+                            placeholder="Senha:"
+                        />
+                    </label>
+                    <label class="botao">
+                        <input type="submit" value="Cadastrar!" />
+                    </label>
+                </form>
+                <div class="checkout">
+                    <div>
+                        <p>
+                            Já tem uma conta?
+                            <a href="#Login" target="_blank"> Faça o login!</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            Esqueceu a senha?
+                            <a href="#Email_Cadastrado" target="_blank">
+                                Clique Aqui!</a
+                            >
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer>
-        <div class="rodape">
-            <p class="footer-texto">
-                Criação e Desenvolvimento:
-                <a href="https://github.com/Jomarfranca" target="_blank">Jomar A. França </a> 2022 -
-                <a href="https://www.linkedin.com/in/jomar-almeida-franca/" target="_blank">Front End Devenloper</a
-                >
-            </p>
-        </div>
-    </footer>  
-    <script src="script.js"></script>
-</body>
+        <footer>
+            <div class="rodape">
+                <p class="footer-texto">
+                    Criação e Desenvolvimento:
+                    <a href="https://github.com/Jomarfranca" target="_blank"
+                        >Jomar A. França
+                    </a>
+                    2022 -
+                    <a
+                        href="https://www.linkedin.com/in/jomar-almeida-franca/"
+                        target="_blank"
+                        >Front End Developer</a
+                    >
+                </p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
